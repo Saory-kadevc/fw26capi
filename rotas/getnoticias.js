@@ -1,7 +1,8 @@
 module.exports = (app)=>{
     app.get('/noticias', async (req, res)=>{
         try{
-            const connect = await app.dbClient.connect();
+            console.log("teste1")
+            //const connect = await app.dbClient.connect();
             console.log(connect)
             res.send("teste")
             
@@ -16,4 +17,5 @@ module.exports = (app)=>{
             await app.dbClient.close()
         }
     })
+
 }
