@@ -11,3 +11,7 @@ module.exports = (app) => {
   });
   app.dbClient = client; // agora pode ser acessado em qualquer lugar com app.dbClient
 };
+
+
+// Create a MongoClient with a MongoClientOptions object to set the Stable API version
+;
