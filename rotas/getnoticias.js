@@ -2,8 +2,7 @@ module.exports = (app)=>{
     app.get('/noticias', async (req, res)=>{
         try{
             console.log("teste1")
-            //const connect = await app.dbClient.connect();
-            console.log(connect)
+            await app.dbClient.connect();
             res.send("teste")
             
             // const resultado = await app.dbClient.db('portalnoticias')
@@ -19,3 +18,4 @@ module.exports = (app)=>{
     })
 
 }
+
